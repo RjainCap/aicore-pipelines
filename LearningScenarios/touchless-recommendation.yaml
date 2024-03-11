@@ -15,16 +15,16 @@ metadata:
 spec:
   imagePullSecrets:
     - name: docker-rajatfjain216 # your docker registry secret
-  entrypoint: mypipeline
+  entrypoint: touchlesspipeline
   arguments:
     parameters: # placeholder for string like inputs
         - name: DT_MAX_DEPTH # identifier local to this workflow
   templates:
-  - name: mypipeline
+  - name: touchlesspipeline
     steps:
-    - - name: mypredictor
-        template: mycodeblock1
-  - name: mycodeblock1
+    - - name: touchlesspredictor
+        template: touchlesscodeblock1
+  - name: touchlesscodeblock1
     metadata:
         labels:
             ai.sap.com/resourcePlan: starter
