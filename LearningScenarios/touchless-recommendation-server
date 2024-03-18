@@ -6,7 +6,7 @@ metadata:
     scenarios.ai.sap.com/description: "Data recommendation for Touchless Application"
     scenarios.ai.sap.com/name: "Touchless (Recommendations)"
     executables.ai.sap.com/description: "Create online server to provide recommendation in touchless app"
-    executables.ai.sap.com/name: "server"
+    executables.ai.sap.com/name: "touchless-server"
     artifacts.ai.sap.com/dardatamodel.kind: "model" # Suggest the kind of artifact to input.
   labels:
     scenarios.ai.sap.com/id: "touchless-learning-datalines"
