@@ -7,14 +7,14 @@ metadata:
     scenarios.ai.sap.com/name: "SAP Hackathon ATP Training (Recommendations)"
     executables.ai.sap.com/description: "Create online server to provide recommendation in SAP Hackathon ATP app"
     executables.ai.sap.com/name: "sap-hackathon-atp-server"
-    artifacts.ai.sap.com/sap-hackathon-atp-datamodel.kind: "model" # Suggest the kind of artifact to input.
+    artifacts.ai.sap.com/sap_hackathon_atp_datamodel.kind: "model" # Suggest the kind of artifact to input.
   labels:
     scenarios.ai.sap.com/id: "sap-hackathon-atp-learning-datalines"
     ai.sap.com/version: "1.0"
 spec:
   inputs:
     artifacts:
-      - name: sap-hackathon-atp-datamodel # placeholder name, do not add `-` in value use only alphanumeric chars
+      - name: sap_hackathon_atp_datamodel # placeholder name, do not add `-` in value use only alphanumeric chars
     parameters:
       - name: greetmessage # placeholder name
         type: string # required for every parameters
@@ -45,6 +45,6 @@ spec:
               set -e && echo "Starting" && gunicorn --chdir /app/src main:app -b 0.0.0.0:9001 # filename `main` flask variable `app`
           env:
             - name: STORAGE_URI # Required
-              value: "{{inputs.artifacts.sap-hackathon-atp-datamodel}}" # Required reference from artifact name, see above
+              value: "{{inputs.artifacts.sap_hackathon_atp_datamodel}}" # Required reference from artifact name, see above
             - name: greetingmessage # different name to avoid confusion
               value: "{{inputs.parameters.greetmessage}}"
