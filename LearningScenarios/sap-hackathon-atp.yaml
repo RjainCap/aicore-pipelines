@@ -7,8 +7,8 @@ metadata:
     scenarios.ai.sap.com/name: "SAP Hackathon ATP Training (Recommendations)" # Scenario name should be the use case
     executables.ai.sap.com/description: "Train with legacy data"
     executables.ai.sap.com/name: "sap-hackathon-atp-executable" # Executable name should describe the workflow in the use case
-    artifacts.ai.sap.com/dardataset.kind: "dataset" # Helps in suggesting the kind of inputs that can be attached.
-    artifacts.ai.sap.com/dardatamodel.kind: "model" # Helps in suggesting the kind of artifact that can be generated.
+    artifacts.ai.sap.com/sap-hackathon-atp-dataset.kind: "dataset" # Helps in suggesting the kind of inputs that can be attached.
+    artifacts.ai.sap.com/sap-hackathon-atp-datamodel.kind: "model" # Helps in suggesting the kind of artifact that can be generated.
   labels:
     scenarios.ai.sap.com/id: "sap-hackathon-atp"
     ai.sap.com/version: "1.0"
