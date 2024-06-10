@@ -10,7 +10,7 @@ metadata:
     artifacts.ai.sap.com/sap-hackathon-atp-dataset.kind: "dataset" # Helps in suggesting the kind of inputs that can be attached.
     artifacts.ai.sap.com/sap_hackathon_atp_datamodel.kind: "model" # Helps in suggesting the kind of artifact that can be generated.
   labels:
-    scenarios.ai.sap.com/id: "sap-hackathon-atp"
+    scenarios.ai.sap.com/id: "sap-hackathon-atp-learning-datalines"
     ai.sap.com/version: "1.0"
 spec:
   imagePullSecrets:
